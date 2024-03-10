@@ -6,11 +6,11 @@ namespace PARCIAL1A.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BusquedaPersonalizadaController : ControllerBase
+    public class BuscarController : ControllerBase
     {
         private readonly Parcial1ADBContext _parcial1ADBContext;
 
-        public BusquedaPersonalizadaController (Parcial1ADBContext Parcial1ADBContexto)
+        public BuscarController(Parcial1ADBContext Parcial1ADBContexto)
         {
             _parcial1ADBContext = Parcial1ADBContexto;
 
