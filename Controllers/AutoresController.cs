@@ -31,7 +31,7 @@ namespace PARCIAL1A.Controllers
 
         [HttpGet]
         [Route("GetById/{Id}")]
-
+          
         public IActionResult Get(int Id)
         {
             Autores? Autor = (from e in _parcial1ADBContext.Autores where e.Id == Id select e).FirstOrDefault();
